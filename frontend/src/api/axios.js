@@ -1,10 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:5000"
-      : "https://netflix-project-28xz.onrender.com",
+  baseURL: import.meta.env.VITE_API_BASE || "http://localhost:5000",
   headers: {
     "Content-Type": "application/json",
   },

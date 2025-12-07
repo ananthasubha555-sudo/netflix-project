@@ -4,17 +4,11 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-/**
- * ✅ CORS configuration
- * - Allows local development
- * - Allows Vercel deployed frontend
- */
 app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "http://localhost:5174",
-      "https://netflix-website1-seven.vercel.app",
+    
     ],
     methods: ["GET", "POST"],
   })
