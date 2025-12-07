@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL:
     process.env.NODE_ENV === "development"
       ? "http://localhost:5000"
-      : "https://YOUR-BACKEND-NAME.onrender.com",
+      : "https://netflix-project-28xz.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
